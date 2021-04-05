@@ -1,0 +1,22 @@
+.footer_container {
+    @include container();
+}
+.social {
+    padding: 0 55px;
+
+    &_list {
+        @include flexible(row, flex-start, center);
+
+        &_item {
+            margin-right: 26px;
+
+            &:hover svg path {
+                fill: $color_sec
+            }
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+        }
+    }
+}

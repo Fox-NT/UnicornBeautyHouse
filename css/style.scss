@@ -1,0 +1,12 @@
+@import 'base/reset.scss';
+@import 'base/fonts.scss';
+@import 'base/base.scss';
+@import 'utils/mixins.scss';
+
+@import 'layout/header.scss';
+@import 'layout/main.scss';
+@import 'layout/footer.scss';
+
+@import 'utils/mediarequire.scss';
+*{
+    transition: 0.3s all linear;}

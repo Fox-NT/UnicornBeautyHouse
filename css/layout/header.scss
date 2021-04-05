@@ -1,0 +1,143 @@
+.header_container {
+    @include container();
+    font-family: $font;
+    background: url(../../img/top_brush.png);
+    background-repeat: no-repeat;
+    background-position: 60px -10px;
+
+    .container {
+        padding: 14px 52.21px 40px 57.8px;
+        @include flexible(row, space-between, center);
+        width: 100%;
+
+        .logo {
+            margin-right: 15px;
+        }
+    }
+}
+
+.btn_phone {
+    display: none;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 2000;
+    // right: 30px;
+    // top: 68px;
+}
+
+.burger span {
+    position: absolute;
+    background-color: rgba(130, 130, 130, 1);
+    left: 0;
+    width: 100%;
+    height: 4px;
+    top: 8px;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.burger_active span {
+    transform: scale(0);
+    transition: 0.2s;
+}
+
+.burger::after {
+    top: 0;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+.burger::before {
+    bottom: 0;
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+.burger_active::after {
+    transform: rotate(45deg);
+    top: 6px;
+    transition: 0.5s;
+}
+
+.burger_active::before {
+    transform: rotate(-45deg);
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+.burger::after,
+.burger::before {
+    content:'';
+    background-color:  rgba(130, 130, 130, 1);
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+}
+
+.header_wrapper {
+    @include flexible(column, center, flex-start);
+    width: 100%;
+}
+
+.header_contacts {
+    @include flexible(row, space-between, center);
+    width: 100%;
+    margin-bottom: 17px;
+
+    &_contacts {
+        @include font(14px, 300, $color);
+
+        & span {
+            margin-left: 35px;
+            @include font(14px, bold, $color);
+            text-decoration: underline;
+        }
+    }
+
+    &_.adress {
+        @include font(14px, 300, $color);
+    }
+}
+
+.header_nav_wrapper {
+    @include flexible(row, space-between, center);
+    width: 100%;
+}
+
+.header_nav {
+    &_list {
+        @include flexible(row, space-between, center);
+
+        &_item {
+            margin-right: 45px;
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+
+            & a {
+                text-decoration: none;
+                @include font(14px, 600, $color);
+
+                &.current {
+                    @include font(14px, 600, $color_sec);
+                }
+            }
+        }
+    }
+} 
+.header_order {
+    & a {
+        text-decoration: none;
+        display: block;
+        background-color: #77C1E5;
+        padding: 15px 36px 14px 39px;
+        border-radius: 15px;
+        text-transform: uppercase;
+        @include font(18px, 300, $bg_color);
+    }
+}

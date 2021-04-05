@@ -1,0 +1,56 @@
+@mixin font($size, $weight, $color) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin flexible($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin container {
+    max-width: $container;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin reset() {
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+@mixin btn() {
+    transition: 0.2s all linear;
+    @include flexible(row, center, center);
+
+    & a {
+        display: block;
+        background-color: #77C1E5;
+        padding: 15px 36px 14px 39px;
+        @include font(20px, 300, $bg_color);
+        line-height: 21px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        border-radius: 15px;
+
+        &:hover {
+            background-color: $color_sec;
+            transition: 0.2s all linear;
+        }
+    }
+}
+
+
+@mixin title() {
+    @include font(45px, bold, $color_sec);
+    font-family: 'a_AvanteTitlerCpsUpC', Arial;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
