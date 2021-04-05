@@ -1,7 +1,7 @@
 .header_container {
     @include container();
     font-family: $font;
-    background: url(../../img/top_brush.png);
+    background: url(../img/top_brush.png);
     background-repeat: no-repeat;
     background-position: 60px -10px;
 

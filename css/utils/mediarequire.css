@@ -65,7 +65,7 @@
     display: none;
   }
   .feedback::before {
-    background-image: url(../../img/brush_feedbac1k.png);
+    background-image: url(../img/brush_feedbac1k.png);
     display: block;
     position: absolute;
     width: 100%;

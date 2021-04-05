@@ -4,14 +4,14 @@
 }
 
 .about {
-    background-image: url(../../img/header_bg.png);
+    background-image: url(../img/header_bg.png);
     text-align: right;
     min-height: 550px;
     @include flexible(row, flex-end, center);
     
     &_wrapper{
         padding: 30px 50px 62px 0;
-        background-image: url(../../img/header_brush.png);
+        background-image: url(../img/header_brush.png);
         background-repeat: no-repeat;
         background-position: right;
         background-position-y: -10px;
@@ -36,7 +36,7 @@
     display: none;
 }
 .services {
-    background-image: url(../../img/main_brush.png);
+    background-image: url(../img/main_brush.png);
     background-repeat: no-repeat;
     background-position: 0 -60px;
     position: relative;
@@ -44,7 +44,7 @@
 
     &::after {
         display: block;
-        content: url(../../img/main_brush2.png);
+        content: url(../img/main_brush2.png);
         position: absolute;
         bottom: -230px;
         right: 0px;
@@ -324,7 +324,7 @@
     position: relative;
 
     &::after {
-        content: url(../../img/brush_feedbac1k.png);
+        content: url(../img/brush_feedbac1k.png);
         display: block;
         position: absolute;
         top: -50px;
@@ -436,7 +436,7 @@
 
 .promotion {
     &_wrapper {
-        background-image: url(../../img/promotion_bg.png);
+        background-image: url(../img/promotion_bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 85px 0 75px 0;
@@ -639,7 +639,7 @@
                 content: '';
                 position: absolute;
                 pointer-events: none; 
-                content: url(../../img/input_arrow.svg);
+                content: url(../img/input_arrow.svg);
                 top: 0;
                 right: 26px;
                 bottom: 0;

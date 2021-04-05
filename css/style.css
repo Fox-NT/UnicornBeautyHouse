@@ -297,7 +297,7 @@ body {
   width: 100%;
   margin: 0 auto;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  background: url(../../img/top_brush.png);
+  background: url(../img/top_brush.png);
   background-repeat: no-repeat;
   background-position: 60px -10px;
 }
@@ -532,7 +532,7 @@ body {
 }
 
 .about {
-  background-image: url(../../img/header_bg.png);
+  background-image: url(../img/header_bg.png);
   text-align: right;
   min-height: 550px;
   display: -webkit-box;
@@ -552,7 +552,7 @@ body {
 
 .about_wrapper {
   padding: 30px 50px 62px 0;
-  background-image: url(../../img/header_brush.png);
+  background-image: url(../img/header_brush.png);
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: -10px;
@@ -579,7 +579,7 @@ body {
 }
 
 .services {
-  background-image: url(../../img/main_brush.png);
+  background-image: url(../img/main_brush.png);
   background-repeat: no-repeat;
   background-position: 0 -60px;
   position: relative;
@@ -588,7 +588,7 @@ body {
 
 .services::after {
   display: block;
-  content: url(../../img/main_brush2.png);
+  content: url(../img/main_brush2.png);
   position: absolute;
   bottom: -230px;
   right: 0px;
@@ -1113,7 +1113,7 @@ body {
 }
 
 .feedback::after {
-  content: url(../../img/brush_feedbac1k.png);
+  content: url(../img/brush_feedbac1k.png);
   display: block;
   position: absolute;
   top: -50px;
@@ -1304,7 +1304,7 @@ body {
 }
 
 .promotion_wrapper {
-  background-image: url(../../img/promotion_bg.png);
+  background-image: url(../img/promotion_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 85px 0 75px 0;
@@ -1687,7 +1687,7 @@ body {
   content: '';
   position: absolute;
   pointer-events: none;
-  content: url(../../img/input_arrow.svg);
+  content: url(../img/input_arrow.svg);
   top: 0;
   right: 26px;
   bottom: 0;
@@ -1878,7 +1878,7 @@ body {
     display: none;
   }
   .feedback::before {
-    background-image: url(../../img/brush_feedbac1k.png);
+    background-image: url(../img/brush_feedbac1k.png);
     display: block;
     position: absolute;
     width: 100%;
